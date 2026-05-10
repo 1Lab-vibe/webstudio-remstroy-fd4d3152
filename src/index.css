@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 30% 98%;
+    --foreground: 25 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 25 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 25% 12%;
+
+    --primary: 22 90% 48%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 28 95% 58%;
+
+    --secondary: 25 20% 94%;
+    --secondary-foreground: 25 25% 15%;
+
+    --muted: 30 15% 94%;
+    --muted-foreground: 25 10% 40%;
+
+    --accent: 22 90% 48%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 25 15% 88%;
+    --input: 25 15% 88%;
+    --ring: 22 90% 48%;
+
+    --radius: 0.625rem;
+
+    --gradient-hero: linear-gradient(135deg, hsl(25 25% 12% / 0.85), hsl(25 25% 12% / 0.55));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --shadow-soft: 0 4px 20px -8px hsl(25 25% 12% / 0.15);
+    --shadow-elevated: 0 12px 40px -12px hsl(25 25% 12% / 0.25);
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground antialiased; font-family: 'Inter', system-ui, sans-serif; }
+  h1, h2, h3, h4 { font-family: 'Manrope', 'Inter', sans-serif; @apply tracking-tight; }
+}
